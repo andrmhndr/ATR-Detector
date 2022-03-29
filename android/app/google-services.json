@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "792731268033",
+    "firebase_url": "https://arduinoconnect-a5c14-default-rtdb.firebaseio.com",
+    "project_id": "arduinoconnect-a5c14",
+    "storage_bucket": "arduinoconnect-a5c14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792731268033:android:89dea313d53cf49b54b540",
+        "android_client_info": {
+          "package_name": "com.atr.atrdetector"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792731268033-00um992rsla1breq4sbf3opt1d4avcgh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo0sUDu6TfuXuTeTnybbTjH6Hvnnf-M6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792731268033-00um992rsla1breq4sbf3opt1d4avcgh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792731268033:android:c81847264e4035f054b540",
+        "android_client_info": {
+          "package_name": "com.example.atrdetection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792731268033-00um992rsla1breq4sbf3opt1d4avcgh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo0sUDu6TfuXuTeTnybbTjH6Hvnnf-M6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792731268033-00um992rsla1breq4sbf3opt1d4avcgh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
