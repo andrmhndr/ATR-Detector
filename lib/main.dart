@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:atrdetector/constants.dart';
 import 'home/home.dart';
 import 'package:flutter/material.dart';

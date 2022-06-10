@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
-import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 
@@ -65,7 +63,7 @@ class MainData extends StatelessWidget {
     }
 
     scanButton() {
-      realtime.child('data').child('scan').set(true);
+      realtime.child('data').child('get data').set(true);
     }
 
     return Column(
@@ -82,10 +80,10 @@ class MainData extends StatelessWidget {
                 Column(
                   children: [
                     Container(
-                        margin:
-                            EdgeInsets.only(bottom: thisDefaultPadding * 0.25),
-                        padding: EdgeInsets.symmetric(
-                            horizontal: thisDefaultPadding * 0.5),
+                        width: size.width,
+                        margin: EdgeInsets.only(
+                          bottom: thisDefaultPadding * 0.25,
+                        ),
                         child: FirebaseDatabaseQueryBuilder(
                             query: realtime,
                             builder: (context, snapshot, _) {
@@ -95,6 +93,10 @@ class MainData extends StatelessWidget {
                                     data['result'].toStringAsFixed(2));
                                 String status = potentialCheck(ph);
                                 saveData(data['get data'], ph, status);
+                                realtime
+                                    .child('data')
+                                    .child('get data')
+                                    .set(false);
                                 return SizedBox(
                                   width: size.width * 0.4,
                                   child: Column(
@@ -139,7 +141,7 @@ class MainData extends StatelessWidget {
                               color: thisPrimaryColor,
                               borderRadius: BorderRadius.circular(36)),
                           child: Text(
-                            "Scan",
+                            "Save",
                             style: TextStyle(color: Colors.white),
                           )),
                     ),
